@@ -9,10 +9,7 @@ fun main() {
         height = 7f
     )
     println(rect)
-    val rect2 = Rectangle(
-        width = 5f,
-        height = 7f
-    )
+    val rect2 = rect.copy(width = 3f)
     println(rect2)
     println(rect == rect2)
 
@@ -20,6 +17,17 @@ fun main() {
     println(circle)
 
     println(sumAreas(rect,rect2, circle))
+    printShapes(rect, rect2, circle, FixSizeSquare)
+}
+
+fun printShapes(vararg shapes: Shape) {
+    for (shape in shapes) {
+        when (shape) {
+            is Rectangle -> println("Rectangle: ${shape.width} x ${shape.height}")
+            is Circle -> println("Circle: r = ${shape.radius}")
+            is FixSizeSquare -> println("Fixed Square: ${shape.side} X ${shape.side}")
+        }
+    }
 }
 
 fun sumAreas(vararg shapes: Shape): Double {
@@ -29,6 +37,12 @@ fun sumAreas(vararg shapes: Shape): Double {
 interface Shape {
     val area: Float
     val perimeter: Float
+}
+
+data object FixSizeSquare: Shape {
+    val side = 4f
+    override val area = 16f
+    override val perimeter = 16f
 }
 
 data class Rectangle(val width: Float, val height: Float): Shape {
