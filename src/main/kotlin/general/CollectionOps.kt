@@ -1,4 +1,4 @@
-package org.example
+package general
 
 data class Hero(
     val name: String,

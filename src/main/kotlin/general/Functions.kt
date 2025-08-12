@@ -1,4 +1,4 @@
-package org.example
+package general
 
 fun main() {
     print("Enter a String: ")

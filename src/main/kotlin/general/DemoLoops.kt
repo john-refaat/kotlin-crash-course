@@ -1,4 +1,4 @@
-package org.example
+package general
 
 import kotlin.collections.iterator
 

@@ -1,4 +1,4 @@
-package org.example
+package general
 
 fun updateWeather(degrees: Int) {
     val (description, color) = when {

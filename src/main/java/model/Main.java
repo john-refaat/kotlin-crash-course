@@ -1,10 +1,9 @@
 package model;
 
-import org.example.Child;
-import org.example.DemoKt;
-import org.example.Parent;
-
-import static org.example.ExtensionFunctionKt.*;
+import general.Child;
+import general.DemoKt;
+import general.ExtensionFunctionKt;
+import general.Parent;
 
 
 public class Main {
@@ -36,9 +35,9 @@ public class Main {
 
     public static void main(String[] args) {
         sumOverloads();
-        System.out.println(repeat("abcd", 3));
+        System.out.println(ExtensionFunctionKt.repeat("abcd", 3));
         Parent p = new Child();
-        System.out.println(foo(p));
-        System.out.println(foo(new Child()));
+        System.out.println(ExtensionFunctionKt.foo(p));
+        System.out.println(ExtensionFunctionKt.foo(new Child()));
     }
 }

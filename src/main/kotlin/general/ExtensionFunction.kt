@@ -1,4 +1,4 @@
-package org.example
+package general
 
 fun String.repeat(n: Int): String {
     val sb = StringBuilder(n*length)

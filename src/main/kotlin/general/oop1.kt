@@ -1,4 +1,4 @@
-package org.example
+package general
 
 import kotlin.math.PI
 import kotlin.math.sqrt

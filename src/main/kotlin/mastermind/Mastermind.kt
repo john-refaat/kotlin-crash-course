@@ -1,4 +1,4 @@
-package org.example.mastermind
+package mastermind
 
 import kotlin.math.min
 

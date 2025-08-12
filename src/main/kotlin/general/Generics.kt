@@ -1,4 +1,4 @@
-package org.example
+package general
 
 fun main() {
     val favouriteNumbers = listOf(1,2,3,4,5)
