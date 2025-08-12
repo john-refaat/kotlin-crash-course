@@ -1,5 +1,7 @@
 package org.example
 
+import kotlin.text.iterator
+
 fun main() {
     print("Enter a String: ")
     val input = readln()

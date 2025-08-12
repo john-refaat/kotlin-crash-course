@@ -1,5 +1,7 @@
 package org.example
 
+import kotlin.collections.iterator
+
 fun main() {
     val maps = mapOf(1 to "One",
         2 to "Two",
