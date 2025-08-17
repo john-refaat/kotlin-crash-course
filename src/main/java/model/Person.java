@@ -1,5 +1,7 @@
 package model;
 
+import oop.Customer;
+
 public class Person {
     private final String name;
     private final int age;
@@ -12,5 +14,9 @@ public class Person {
     }
     public int getAge() {
         return age;
+    }
+
+    public void customer() {
+        System.out.println(new Customer("Rebecca"));
     }
 }

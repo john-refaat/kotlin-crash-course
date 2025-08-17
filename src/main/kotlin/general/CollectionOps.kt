@@ -1,5 +1,7 @@
 package general
 
+import java.util.Vector
+
 data class Hero(
     val name: String,
     val age: Int,
@@ -62,6 +64,5 @@ fun main() {
     postponeComputation(2000, runnable)
 
     postponeComputation(2000) { println("Running!") }
-
 
 }
